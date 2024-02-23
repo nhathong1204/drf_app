@@ -132,4 +132,4 @@ Open the **run_project/** folder and click the **run.bat** file
 - Run in Window: https://somup.com/cZn0QZp4MP
 - Create superuser: https://somup.com/cZn06ip49Y
 
-[image-feat-privoder]: https://imgtr.ee/images/2024/02/23/8826b604a9af32213c7f3d0fde134cf2.png
+[image-feat-privoder]: https://imgtr.ee/images/2024/02/23/33559bc9094ccf7a66bf792548d02f6c.png
