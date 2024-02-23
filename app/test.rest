@@ -1,0 +1,39 @@
+POST http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{ "email": "nhathong1204@gmail.com", "first_name": "Nhat", "last_name": "Hong", "password": "admin123"}
+
+###
+
+POST http://127.0.0.1:8000/signup/
+Content-Type: application/json
+
+{ "email": "harry@gmail.com", "first_name": "Harry", "last_name": "JP", "password": "admin123" }
+
+###
+
+GET http://127.0.0.1:8000/test_token
+Content-Type: application/json
+Authorization: token 67e4983435e266e619c5aafba2b44424a31a0bc3
+
+{}
+
+###
+
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{ "email": "nhathong1204@gmail.com", "password": "admin123" }
+
+###
+
+POST http://127.0.0.1:1000/api/token/refresh/
+Content-Type: application/json
+
+{ "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODQ0OTUyOSwiaWF0IjoxNzA4MzYzMTI5LCJqdGkiOiI4ZTY0Njc4ZDc1NDU0YjFhODM1MjQ0MDRiY2JjN2ZhZiIsInVzZXJfaWQiOjF9.KNtPPlLI9CWwXea5Td9UXJUWtJdKMDRfuutvuz2CYrY" }
+
+###
+
+GET http://127.0.0.1:1000/stores/categories/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA4MzYzNDI5LCJpYXQiOjE3MDgzNjMxMjksImp0aSI6Ijk5NjM2ZDM1NDJiMTRlOGY5NmNhMTE0OTU1MjEyYzc3IiwidXNlcl9pZCI6MX0.6uPJ8TLfx_nRdADR_vG0QsfVd-ZDcenp9mVujCyAbNg

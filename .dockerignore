@@ -1,0 +1,17 @@
+# Git
+.git
+.gitignore
+
+.vscode
+
+# Docker
+.docker
+
+# Python
+app/accounts/__pycache__/
+app/ecommerce/__pycache__/
+app/stores/__pycache__/
+app/env/
+run_project.zip
+
+

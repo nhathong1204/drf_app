@@ -1,0 +1,23 @@
+services:
+  web:
+    build: ./app
+    command: python manage.py runserver 0.0.0.0:80
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      - 80:80
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+  db:
+    image: postgres:16
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=test@123
+      - POSTGRES_DB=drf_ecommerce
+
+volumes:
+  postgres_data:
